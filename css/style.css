@@ -240,7 +240,7 @@ body {
 }
 
 .contact-card {
-    height: 300px;
+    min-height: 320px;
     border-radius: 20px;
     padding: 20px;
     padding-top: 180px;
@@ -249,7 +249,7 @@ body {
 .contact-details a {
     color: #009ad8;
     font-size: 20px;
-    padding-right: 20px;
+    padding-right: 5px;
 }
 
 .contact-details .text-contact {
