@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="logo d-flex justify-content-center align-items-center">
+              <img class="w-100 me-2" src="images/logo.png" alt="cloud" />
+              <div class="logo-text">
+                <h1>Weather</h1>
+                <small>tagline goes here</small>
+              </div>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container sub-nav my-3">
+      <nav style="--bs-breadcrumb-divider: '->'" aria-label="breadcrumb">
+        <ol class="breadcrumb d-flex align-items-center mb-0">
+          <li class="breadcrumb-item ps-3"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+    </div>
+    <section class="contact-form my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card contact-card w-75 mt-5">
+              <div class="body">
+                <div class="contact-details d-flex my-2">
+                  <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                  <div class="text-contact">
+                    <div>Company Name INC.</div>
+                    <div>2803 Avenue Street, Los Angeles</div>
+                  </div>
+                </div>
+                <div class="contact-end d-flex">
+                  <div class="contact-details d-flex align-items-center pe-5">
+                    <a href=""><i class="fa-solid fa-phone"></i></a>
+                    <div class="text-contact">
+                      <div>+1 800 314 235</div>
+                    </div>
+                  </div>
+                  <div class="contact-details d-flex align-items-center">
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <div class="text-contact">
+                      <div>contact@companyname.com</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-white">
+            <h1 class="text-white mb-3 mt-5">Contact Us</h1>
+            <p class="fs-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              consectetur inventore ducimus, facilis, numquam id soluta omnis
+              eius recusandae nesciunt vero repellat harum cum. Nisi facilis
+              odit hic, ipsum sed!
+            </p>
+            <div class="first-form d-flex justify-content-between mb-3">
+              <input
+                type="text"
+                class="form-control w-50 ps-3 p-2 me-2"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Your name..."
+              />
+              <input
+                type="text"
+                class="form-control w-50 ps-3 p-2"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder=" Email Addresss..."
+              />
+            </div>
+            <div class="second-form d-flex justify-content-between">
+              <input
+                type="text"
+                class="form-control w-50 ps-3 p-2 me-2"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Company name..."
+              />
+              <input
+                type="text"
+                class="form-control w-50 ps-3 p-2"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Website..."
+              />
+            </div>
+            <textarea
+              class="form-control mt-3"
+              placeholder="Message..."
+              data-has-listeners="true"
+              spellcheck="false"
+            ></textarea>
+            <div class="btn-box d-flex justify-content-end">
+              <button class="submit" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer py-5">
+      <div class="container">
+        <div class="head d-flex justify-content-between align-items-center">
+          <div class="footer-input position-relative ms-0">
+            <input
+              type="text"
+              class="form-control"
+              list="datalistOptions"
+              id="exampleDataList"
+              placeholder="Enter your email to subscribe..."
+            />
+            <button class="btn btn-footer" type="submit">Subscribe</button>
+          </div>
+          <div class="icons d-flex justify-content-center align-items-center">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <p class="end my-3">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </section>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
