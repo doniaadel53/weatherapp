@@ -18,7 +18,7 @@ let nextday=document.querySelectorAll(".next-day")
 let searchinput= document.getElementById("search-input")
 
 async function getweatherdata(cityname) {
-    let data= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=b003f452493b48f5a3b213330241210&q=${cityname}&days=3`)
+    let data= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b003f452493b48f5a3b213330241210&q=${cityname}&days=3`)
     let weatherdata= await data.json()
 
    return weatherdata
